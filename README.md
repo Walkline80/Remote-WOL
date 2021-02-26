@@ -10,7 +10,10 @@
 
 * 硬件部分：基于`ESP32`开发的 [Remote WOL MicroPython](https://gitee.com/walkline/remote-wol-micropython)
 
-* 软件部分：基于[uni-app](https://uniapp.dcloud.io/)开发的 [Remote WOL Uni-App](https://gitee.com/walkline/remote-wol-uni-app) (安卓)
+* 软件部分：
+
+	1. 基于 [uni-app](https://uniapp.dcloud.io/) 开发的 [Remote WOL Uni-App](https://gitee.com/walkline/remote-wol-uni-app) (安卓)
+	2. 基于`PHP`开发的 [在线更新管理器](https://gitee.com/walkline/online-update-manager)
 
 ### 使用方法
 
@@ -33,9 +36,9 @@
 
 > `开发板`处于未设置状态的时候板载 Led 会一直闪烁，正确设置并正常运行以后 Led 处于常亮状态
 
-#### App 部分
+#### 软件部分：手机 App
 
-1. 从`Remote WOL Uni-App`项目[releases](https://gitee.com/walkline/remote-wol-uni-app/releases)中下载对应版本的`apk`文件并安装到手机上
+1. 从`Remote WOL Uni-App`项目 [releases](https://gitee.com/walkline/remote-wol-uni-app/releases) 中下载对应版本的`apk`文件并安装到手机上
 2. 打开`设置`页面，填写相关参数，测试无误后点右上角`保存`按钮
 
 	> 如果使用`扇贝物联`提供的 MQTT 服务，务必打开`扇贝物联`开关并填写注册时的用户名
@@ -52,6 +55,10 @@
 7. 设备运行正常，App 设置正确的情况下，直接点击刚刚添加的电脑即可实现远程唤醒
 
 > App 设置正确的情况下，首页右上角的灯泡会处于发光状态
+
+#### 软件部分：网站 App
+
+`在线更新管理器`用于管理手机 App 在线更新信息，包括上传 App 文件，管理 、查看 App 升级信息等功能，具体使用方法参考 [在线更新管理器](https://gitee.com/walkline/online-update-manager) 中的说明
 
 ### 硬件复位
 
@@ -72,7 +79,7 @@
 
 #### 无法分辨责任的问题
 
-- [ ] 在排除权限问题的情况下，有的时候点击`测试按钮`还是长时间无响应也没有报错，经过观察发现，硬件上开启的热点和`WebSocket`服务都正常，反复重启硬件或者 App 重新尝试连接都可以解决问题，但是原因未知。。。
+- [x] 在排除权限问题的情况下，有的时候点击`测试按钮`还是长时间无响应也没有报错，经过观察发现，硬件上开启的热点和`WebSocket`服务都正常，反复重启硬件或者 App 重新尝试连接都可以解决问题，~~但是原因未知。。。~~ 这个问题是由于 App 打开 WebSocket 超时导致的，之前的超时时间为`10 秒`，此时如果手机自动重连无线网络的时间超过这个时间就会出现长时间无响应的问题
 
 ### 如何烧写固件
 
