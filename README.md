@@ -14,6 +14,7 @@
 
 	1. 基于 [uni-app](https://uniapp.dcloud.io/) 开发的 [Remote WOL Uni-App](https://gitee.com/walkline/remote-wol-uni-app) (安卓)
 	2. 基于`PHP`开发的 [在线更新管理器](https://gitee.com/walkline/online-update-manager)
+	3. 基于`PHP`开发的 [数据转发接收接口](https://gitee.com/walkline/data_receiving_interface)
 
 ### 使用方法
 
@@ -56,9 +57,13 @@
 
 > App 设置正确的情况下，首页右上角的灯泡会处于发光状态
 
-#### 软件部分：网站 App
+#### 软件部分：在线更新管理器
 
 `在线更新管理器`用于管理手机 App 在线更新信息，包括上传 App 文件，管理 、查看 App 升级信息等功能，具体使用方法参考 [在线更新管理器](https://gitee.com/walkline/online-update-manager) 中的说明
+
+#### 软件部分：数据转发接收接口
+
+`数据转发接收接口`用于接收并保存`硬件版本 1`上报的温度数据，具体使用方法参考 [数据转发接收接口](https://gitee.com/walkline/data_receiving_interface) 中的说明
 
 ### 硬件复位
 
