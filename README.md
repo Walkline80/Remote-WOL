@@ -16,6 +16,8 @@
 	2. 基于`PHP`开发的 [在线更新管理器](https://gitee.com/walkline/online-update-manager)
 	3. 基于`PHP`开发的 [数据转发接收接口](https://gitee.com/walkline/data_receiving_interface)
 
+> 软硬件部分均处于开发阶段，想要正确运行务必安装、烧录最新版文件
+
 ### 使用方法
 
 远程控制部分基于`MQTT 服务`进行数据交换，所以提前需要注册一个用户账号并准备两个客户端 ID，一个用于硬件设备登录一个用于 App 登录
