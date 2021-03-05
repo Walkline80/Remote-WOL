@@ -27,7 +27,7 @@
 为了便于使用，现已将`Remote WOL MicroPython`项目文件集成到固件文件中
 
 1. 克隆或下载本项目所有文件
-2. 将对应版本目录下的固件烧录到`ESP32 开发板`
+2. 将最新版本目的固件烧录到`ESP32 开发板`
 3. 依次向`开发板`上传`config.py`和`main.py`文件
 
 	* `config.py`：硬件配置文件，用户可以根据需求自行修改（**版本号相关字符串切勿修改**）
@@ -39,7 +39,7 @@
 
 #### 软件部分：手机 App
 
-1. 从`Remote WOL Uni-App`项目 [releases](https://gitee.com/walkline/remote-wol-uni-app/releases) 中下载对应版本的`apk`文件并安装到手机上
+1. 从`Remote WOL Uni-App`项目 [releases](https://gitee.com/walkline/remote-wol-uni-app/releases) 中下载最新版本的`apk`文件并安装到手机上
 2. 打开`设置`页面，填写相关参数，测试无误后点右上角`保存`按钮
 
 	> 如果使用`扇贝物联`提供的 MQTT 服务，务必打开`扇贝物联`开关并填写注册时的用户名
